@@ -1,0 +1,43 @@
+1. Import necessary libraries:
+    - pandas for data manipulation
+    - scikit-learn for data preprocessing and model evaluation
+    - TensorFlow and Keras for building and training the neural network model
+    - matplotlib for plotting
+
+2. Load the dataset from a CSV file.
+
+3. Split the dataset into input features (X) and target variable (y).
+
+4. Encode the categorical target variable using LabelEncoder.
+
+5. Normalize the input features using StandardScaler.
+
+6. Split the dataset into training and testing sets using train_test_split function.
+
+7. Build the neural network model:
+    - Use Sequential API from Keras.
+    - Add Dense layers with specified number of units and activation functions.
+    - Add Dropout layers for regularization to prevent overfitting.
+    - Add an output Dense layer with softmax activation for multi-class classification
+
+8. Compile the model:
+    - Use Adam optimizer.
+    - Use sparse categorical cross-entropy loss function for multi-class classification.
+    - Evaluate model performance based on accuracy.
+
+9. Train the model:
+    - Fit the model to training data.
+    - Specify number of epochs and batch size.
+    - Use 20% of training data as validation data.
+
+10. Smooth the training curves:
+    - Define a function to apply exponential moving averages (EMA) to training and validation accuracy.
+
+11. Plot the smoothed training and validation accuracy curves using matplotlib.
+
+12. Evaluate the trained model on the test data:
+    - Calculate test loss and test accuracy.
+
+13. Print the test loss and test accuracy.
+
+
